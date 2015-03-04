@@ -1,0 +1,15 @@
+#/************************************************************************/
+#/*                                                                      */
+#/*   Show Calendar Week  -  Thunderbird Extension  -  Chrome Manifest   */
+#/*                                                                      */
+#/*      Manifest for chrome packages                                    */
+#/*                                                                      */
+#/*      Copyright (C) 2015  by  russa                                   */
+#/*                                                                      */
+#/*      Last Edit  -  04 Mar 2015                                       */
+#/*                                                                      */
+#/************************************************************************/
+
+content showcalendarweek chrome/content/
+skin showcalendarweek classic/1.0 chrome/skin/
+overlay chrome://calendar/content/calendar-views.xul chrome://showcalendarweek/content/showcalendarweek-calendar-views-overwrite.xul

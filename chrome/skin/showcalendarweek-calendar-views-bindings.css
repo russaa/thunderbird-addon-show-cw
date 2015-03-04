@@ -1,0 +1,20 @@
+/************************************************************************/
+/*                                                                      */
+/*   Show Calendar Week  -  Thunderbird Extension  -  Chrome Manifest   */
+/*                                                                      */
+/*      CSS for modified Calendar Views bindings                        */
+/*                                                                      */
+/*      Copyright (C) 2015  by  russa                                   */
+/*                                                                      */
+/*      Last Edit  -  04 Mar 2015                                       */
+/*                                                                      */
+/************************************************************************/
+
+/* Derived from chrome://calendar/content/calendar-view-bindings.css */
+
+/* TODO add description */
+
+window calendar-month-day-box
+{
+    -moz-binding: url("chrome://showcalendarweek/content/showcalendarweek-calendar-views-bindings.xml#calendar-month-day-box-with-cw") !important;
+}

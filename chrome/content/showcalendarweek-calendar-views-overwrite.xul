@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<!--
+/************************************************************************/
+/*                                                                      */
+/*   Show Calendar Week  -  Thunderbird Extension  -  Calendar Views    */
+/*                                                                      */
+/*      XUL for Calendar Views overlay                                  */
+/*                                                                      */
+/*      Copyright (C) 2015  by  russa                                   */
+/*                                                                      */
+/*      Last Edit  -  04 Mar 2015                                       */
+/*                                                                      */
+/************************************************************************/
+-->    
+
+<?xml-stylesheet href="chrome://showcalendarweek/skin/showcalendarweek-calendar-views-bindings.css" type="text/css"?>
+
+<overlay id="showcalendarweek-calendar-views-overwrite" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+    
+	<toolbar id="mail-toolbar-menubar2"></toolbar>
+	
+</overlay>

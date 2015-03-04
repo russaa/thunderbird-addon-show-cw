@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+/************************************************************************/
+/*                                                                      */
+/*   Show Calendar Week  -  Thunderbird Extension  -  Calendar Views    */
+/*                                                                      */
+/*      XML (XBL) for Calendar Views bindings                           */
+/*                                                                      */
+/*      Copyright (C) 2015  by  russa                                   */
+/*                                                                      */
+/*      Last Edit  -  04 Mar 2015                                       */
+/*                                                                      */
+/************************************************************************/
+-->    
+
+
+<!-- Modified from chrome://calendar/content/calendar-month-view.xml -->
+
+<!DOCTYPE bindings [
+<!ENTITY % globalDTD SYSTEM "chrome://global/locale/global.dtd"> 
+%globalDTD;
+]>
+
+<bindings id="showcalendarweek-calendar-views-bindings"
+  xmlns="http://www.mozilla.org/xbl"
+  xmlns:html="http://www.w3.org/1999/xhtml"
+  xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+  xmlns:xbl="http://www.mozilla.org/xbl">
+
+
+    
+  <binding id="calendar-month-day-box-with-cw" extends="chrome://calendar/content/calendar-month-view.xml#calendar-month-day-box">
+    
+    <!-- Modified from chrome://calendar/content/calendar-month-view.xml#calendar-month-day-box -->
+	
+    <content orient="vertical">
+      <xul:hbox>                                                                                            <!-- russa: extend day-label to include day-number/month and calendar week -->
+	  <xul:label anonid="day-cw-label"
+                 crop="end"
+                 mousethrough="always"
+                 class="calendar-month-day-box-date-label"
+                 xbl:inherits="relation,selected"/>                                                         <!-- russa: add label for calendar week -->
+      <xul:spacer flex="1" class="calendar-month-day-box-date-label" xbl:inherits="relation,selected"/>     <!-- russa -->
+	  <xul:label anonid="day-label"
+                 crop="end"
+                 mousethrough="always"
+                 class="calendar-month-day-box-date-label"
+                 xbl:inherits="relation,selected,value"/>
+	  </xul:hbox>
+      <xul:vbox anonid="day-items" class="calendar-month-day-box-items-box" flex="1">
+        <children/>
+      </xul:vbox>
+    </content>
+
+    <!-- Modified from chrome://calendar/content/calendar-month-view.xml#calendar-month-day-box -->
+    
+    <implementation>
+
+      <method name="setDate">
+        <parameter name="aDate"/>
+        <body><![CDATA[
+          if (!aDate) {
+            throw Components.results.NS_ERROR_NULL_POINTER;
+          }
+
+          // Remove all the old events
+          this.mItemHash = {};
+          removeChildren(this);
+
+          if (this.mDate && this.mDate.compare(aDate) == 0) {
+            return;
+          }
+
+          this.mDate = aDate;
+
+          // Set up DOM attributes for custom CSS coloring.
+          let weekTitle = cal.getWeekInfoService().getWeekTitle(aDate);
+          this.setAttribute("year", aDate.year);
+          this.setAttribute("month", aDate.month + 1);
+          this.setAttribute("week", weekTitle);
+          this.setAttribute("day", aDate.day);
+			
+          //////////////////////////////////////////////////////////////////////////
+			//START MODIFICATION russa: show calender-week in first day of the week
+			let cwmod_firstDayOfTheWeek = cal.getWeekInfoService().getStartOfWeek(aDate).day;
+			if( aDate.day === cwmod_firstDayOfTheWeek){
+				let cwmod_startOfWeekTitle = "CW " + weekTitle;
+				document.getAnonymousElementByAttribute(this, "anonid", "day-cw-label").value = cwmod_startOfWeekTitle;
+			}
+			//END MODIFICATION russa: show calender-week in first day of the week
+          //////////////////////////////////////////////////////////////////////////
+			
+          if (this.mShowMonthLabel) {
+             let monthName = calGetString("dateFormat", "month." + (aDate.month+1) + ".Mmm");
+             this.setAttribute("value", aDate.day + " " + monthName);
+          } else {
+             this.setAttribute("value", aDate.day);
+          }
+        ]]></body>
+      </method>
+
+    </implementation>
+
+
+  </binding>
+
+</bindings>
