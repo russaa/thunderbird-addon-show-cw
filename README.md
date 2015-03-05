@@ -14,6 +14,9 @@ Version 0.1
 
  * compress the contents of this repository with ZIP
  * rename/add file extension `.xpi`
+ 
+ or use ANT script `build.xml`
+ 
 
 ### Install
 
@@ -25,6 +28,7 @@ Version 0.1
 
  * only tested for Thunderbird 31.* (may work with older version...)
  * requires calendar Add-on [Lightning][1]
+   * only tested for Lightning version 3.3.* (may work with older version...)
  
 [1]: https://addons.mozilla.org/en-US/thunderbird/addon/lightning/
 [2]: https://addons.mozilla.org/en-US/thunderbird/addon/calendar-tweaks/

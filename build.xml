@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<project name="Show Calendar Weeks" default="zip-resources">
+    
+    <!-- build properties: -->
+    <property name="dist" value="dist"/>
+    <property name="version" value="0.2"/>
+    
+    <!-- derived properties: -->
+    <property name="distDir" location="${dist}"/>
+    
+    <target name="zip-resources">
+        
+        <zip destfile="${distDir}/thunderbird-addon-show-cw-v${version}.xpi"
+            basedir="./"
+            excludes=".git/**,.gitignore,.project,build.xml,${dist}/**"
+            compress="true"
+        />
+        
+    </target>
+    
+</project>

@@ -20,9 +20,9 @@
 
         <em:id>showcalendarweek@russa.de</em:id>
         <em:type>2</em:type>
-        <em:version>0.1</em:version>
+        <em:version>0.2</em:version>
         <em:name>Show Calendar Week</em:name>
-        <em:description>Shows the calendar week Thunderbird/Lightning calendar's moth and multi-week view. </em:description>
+        <em:description>Shows the calendar week Thunderbird/Lightning calendar's moth and multi-week view.</em:description>
         <em:creator>russa</em:creator>
         <em:iconURL>chrome://showcalendarweek/skin/showcalendarweek-icon.png</em:iconURL>
         <em:homepageURL>https://addons.mozilla.org/thunderbird/addon/showcalendarweek/</em:homepageURL>
