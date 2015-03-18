@@ -4,3 +4,4 @@
 dist
 *.bak
 .*.md.html
+/img
