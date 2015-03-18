@@ -3,5 +3,4 @@
 .settings
 dist
 *.bak
-/img
 .*.md.html
