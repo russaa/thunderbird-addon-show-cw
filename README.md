@@ -11,8 +11,8 @@ This Add-on was inspired by the [Calendar Tweaks][2] Add-on.
 Version 0.1
 
 <div width="100%">
-<img align="center" width="30%" src="https://russaa.github.io/thunderbird-addon-show-cw/img/screenshot-without.png" alt="screenshot where CW numbers are shown in first day of the week">
-<img align="center" width="30%" src="https://russaa.github.io/thunderbird-addon-show-cw/img/screenshot.png" alt="screenshot where CW numbers are shown in first day of the week">
+<img align="center" width="45%" src="https://russaa.github.io/thunderbird-addon-show-cw/img/screenshot-without.png" alt="screenshot where CW numbers are shown in first day of the week">
+<img align="center" width="45%" src="https://russaa.github.io/thunderbird-addon-show-cw/img/screenshot-raw.png" alt="screenshot where CW numbers are shown in first day of the week">
 </div>
 
 ### Build
