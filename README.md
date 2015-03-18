@@ -8,7 +8,7 @@ If installed, the _calender week_ will be displayed in the first day of the week
 
 This Add-on was inspired by the [Calendar Tweaks][2] Add-on.
 
-Version 0.1
+Version 0.2
 
 <div width="100%">
 <img align="center" width="45%" src="https://russaa.github.io/thunderbird-addon-show-cw/img/screenshot-without.png" alt="screenshot where CW numbers are shown in first day of the week">
@@ -37,4 +37,3 @@ Version 0.1
  
 [1]: https://addons.mozilla.org/en-US/thunderbird/addon/lightning/
 [2]: https://addons.mozilla.org/en-US/thunderbird/addon/calendar-tweaks/
-
