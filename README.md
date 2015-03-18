@@ -1,4 +1,4 @@
-# thunderbird-addon-show-calendar-week
+# ![alt text](https://russaa.github.io/thunderbird-addon-show-cw/chrome/skin/showcalendarweek-icon.png "CW extentsion icon") thunderbird-addon-show-calendar-week
 
 Thunderbird/Lightning extension for showing the **calender week** in the month/multiweek view.
 
@@ -9,6 +9,11 @@ If installed, the _calender week_ will be displayed in the first day of the week
 This Add-on was inspired by the [Calendar Tweaks][2] Add-on.
 
 Version 0.1
+
+<div width="100%">
+<img align="center" width="45%" src="https://russaa.github.io/thunderbird-addon-show-cw/img/screenshot-without.png" alt="screenshot where CW numbers are shown in first day of the week">
+<img align="center" width="45%" src="https://russaa.github.io/thunderbird-addon-show-cw/img/screenshot.png" alt="screenshot where CW numbers are shown in first day of the week">
+</div>
 
 ### Build
 
@@ -32,4 +37,3 @@ Version 0.1
  
 [1]: https://addons.mozilla.org/en-US/thunderbird/addon/lightning/
 [2]: https://addons.mozilla.org/en-US/thunderbird/addon/calendar-tweaks/
-
