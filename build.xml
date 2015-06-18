@@ -13,7 +13,7 @@
         
         <zip destfile="${distDir}/thunderbird-addon-show-cw-v${version}.xpi"
             basedir="./"
-            excludes=".git/**,.gitignore,.project,build.xml,${dist}/**"
+            excludes=".git/**,.gitignore,.project,build.xml,${dist}/**,.README.md.html,chrome/skin/showcw.svg"
             compress="true"
         />
         
