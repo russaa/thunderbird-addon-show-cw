@@ -14,7 +14,7 @@ for historical value, here the description for the old (outdated) Addon:
 > 
 > This Add-on was inspired by the [Calendar Tweaks][2] Add-on.
 > 
-> Version 0.3
+> Version 0.4
 > 
 > ***NOTE***: incompatible with Thunderbird 45.x and newer!
 > 

@@ -7,9 +7,9 @@
 /*                                                                      */
 /*      XML (RDF) for installation                                      */
 /*                                                                      */
-/*      Copyright (C) 2015  by  russa                                   */
+/*      Copyright (C) 2016  by  russa                                   */
 /*                                                                      */
-/*      Last Edit  -  04 Mar 2015                                       */
+/*      Last Edit  -  26 Apr 2016                                       */
 /*                                                                      */
 /************************************************************************/
 -->
@@ -20,9 +20,9 @@
 
         <em:id>showcalendarweek@russa.de</em:id>
         <em:type>2</em:type>
-        <em:version>0.3</em:version>
+        <em:version>0.4</em:version>
         <em:name>Show Calendar Week</em:name>
-        <em:description>Shows the calendar week Thunderbird/Lightning calendar's moth and multi-week view.</em:description>
+        <em:description>Incompatible with Thunderbird 45: disable or remove this Addon in Thunderbird version 45 or newer! Shows the calendar week Thunderbird/Lightning calendar's moth and multi-week view.</em:description>
         <em:creator>russa</em:creator>
         <em:iconURL>chrome://showcalendarweek/skin/showcalendarweek-icon.png</em:iconURL>
         <em:homepageURL>https://addons.mozilla.org/thunderbird/addon/showcalendarweek/</em:homepageURL>
