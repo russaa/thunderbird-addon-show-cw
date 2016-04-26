@@ -1,7 +1,7 @@
 # ![alt text](https://russaa.github.io/thunderbird-addon-show-cw/chrome/skin/showcalendarweek-icon.png "CW extentsion icon") thunderbird-addon-show-calendar-week
 
 
-<dl><dt><strong>Deprecated since Thunderbird 45.0:<!strong></dt><dd><strong> since Thunderbird 45.0, the calendar can display the __calender week__ by itself, making this Addon obsolete!</strong> <br> <em>(also this Addon is incompatible with Thunderbird 45)</em></dd></dl>
+<dl><dt><strong>Deprecated since Thunderbird 45.0:<!strong></dt><dd><strong> since Thunderbird 45.0, the calendar can display the <em>calender week</em> by itself, making this Addon obsolete!</strong> <br> <em>...also this Addon is <u>incompatible</u> with Thunderbird 45, i.e. needs to be disabled/removed...</em></dd></dl>
 
 
 for historical value, here the description for the old (outdated) Addon:
