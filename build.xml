@@ -4,7 +4,7 @@
     
     <!-- build properties: -->
     <property name="dist" value="dist"/>
-    <property name="version" value="0.4"/>
+    <property name="version" value="0.5"/>
     
     <!-- derived properties: -->
     <property name="distDir" location="${dist}"/>
